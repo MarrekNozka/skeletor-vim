@@ -2,4 +2,4 @@
 " Maintainer: Gustaf Sjoberg <gs@pipsq.com>
 " Maintainer: Marek Nožka <marrek@marrek.cz>
 
-command! SkeletonList :call skeletor#LoadSkeletons()
+command! SkeletonList :call skeleton#LoadSkeletons()

@@ -34,7 +34,7 @@ function! skeleton#LoadSkeletons()
             silent execute '0r '.fnames[choice - 1]
             let cpoptions = cpoptions
         endif
-        call skeletor#StringReplace()
+        call skeleton#StringReplace()
     else
         let s:m = printf("No skeleton files available for filetype '%s' or extensions '%s'.", &filetype, s:ext)
         echo s:m

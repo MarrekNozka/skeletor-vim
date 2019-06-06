@@ -1,13 +1,25 @@
-# Skeletor
+# Skeleton list
 
-Vim skeletons; about as simple as they come.
+Vim skeletons; about as simple as they come. This is for of 
+[Skeletor-vim](https://github.com/strange/skeletor-vim).
+I added support for file extensions if `filetype` is not specified.
 
 
 ## Installation
 
-### Preferred Method
+To install with [vim-plug](https://github.com/junegunn/vim-plug):
 
-Install [Vundle] and add `Bundle 'strange/skeletor-vim'` to your `.vimrc`.
+```
+Plug 'MarrekNozka/vim-skeletonlist'
+```
+
+or with [Vundle](https://github.com/VundleVim/Vundle.vim):
+
+```
+Plugin 'MarrekNozka/vim-skeletonlist'
+```
+
+
 
 ### Manual Install
 
@@ -17,12 +29,12 @@ directories in your vim plugin directory.
 
 ## Usage
 
-`:Skeletor` brings up a list of all skeletons available for the filetype of
+`:SkeletonList` brings up a list of all skeletons available for the filetype of
 the currently loaded file.
 
 Something like the following in your .vimrc might be nice:
 
-    noremap <leader>s :Skeletor<CR>
+    map <F4> :SkeletonList<CR>
 
 
 ### Skeletons
@@ -46,5 +58,3 @@ This is how you'd create a skeleton for a html form, for example:
 So, on a standard unix installation you'd put your code into the file
 `~/.vim/skeletons/html/form.html`.
 
-
-[Vundle]:http://github.com/gmarik/vundle
